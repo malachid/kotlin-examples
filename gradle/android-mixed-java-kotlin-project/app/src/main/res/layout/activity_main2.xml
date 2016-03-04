@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
+        <variable
+            name="databound"
+            type="java.lang.String"/>
     </data>
     <LinearLayout
         android:orientation="vertical"
@@ -15,6 +18,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Activity 2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="@{databound}" />
 
         <Button android:text="Next"
             android:id="@+id/Button02"

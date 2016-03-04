@@ -47,4 +47,11 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // See https://youtrack.jetbrains.com/issue/KT-8007
+    kapt "com.android.databinding:compiler:2.0.0-beta6"
+}
+
+kapt {
+    generateStubs = true
 }
