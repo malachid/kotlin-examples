@@ -5,6 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
+        // https://bintray.com/android/android-tools/com.android.tools.build.gradle/view
         classpath 'com.android.tools.build:gradle:2.0.0-beta6'
 
         // NOTE: Do not place your application dependencies here; they belong
